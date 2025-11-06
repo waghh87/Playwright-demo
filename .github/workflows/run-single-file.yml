@@ -1,0 +1,28 @@
+name: Run CI for Single File
+
+on:
+    push:
+        paths:
+            - "tests/end_to_end_flow_with_spec_locators.spec.js"
+    pull_request: 
+        paths:
+            - "tests/end_to_end_flow_with_spec_locators.spec.js"
+
+jobs:
+    run-tests:
+        runs-on: windows-latest
+    
+    steps:
+        - name: Checkout code
+          uses:  actions/checkout@v4
+
+        - name: Install Node
+          uses: actions/setup-node@v4
+          with:
+              node-version: lts/*
+        
+        - name: Install dependencies
+          run: npm install
+
+        - name: Run Only test file
+          run: npm run rahulshetty
