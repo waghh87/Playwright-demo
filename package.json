@@ -1,0 +1,19 @@
+{
+  "name": "section_8_demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test tests/book_gobble_API_call.spec.js --ui",
+    "travocart": "npx playwright test tests/end-to-end-flow_travocart.spec.js",
+    "rahulshetty": "npx playwright test tests/end_to_end_flow_with_spec_locators.spec.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.55.1",
+    "@types/node": "^24.5.0"
+  }
+}
