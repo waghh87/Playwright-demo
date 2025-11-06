@@ -12,7 +12,7 @@ test('end-to-end demo with special locators- rgistration form test case',async (
     //Registration form filling
     await page.getByPlaceholder('First Name').type('harshad');
     await page.getByPlaceholder('Last Name').type('wagh');
-    await page.getByPlaceholder('email@example.com').type('harshad.w+special_locator05@crestinfosystems.com');
+    await page.getByPlaceholder('email@example.com').type('harshad.w+special_locator06@crestinfosystems.com');
     await page.getByPlaceholder('enter your number').type('8488975254');
 
     await page.getByRole('combobox').selectOption({label:'Engineer'});
@@ -33,7 +33,7 @@ test('end-to-end demo with special locators- rgistration form test case',async (
 
 test('login case with special locators', async ({page})=>
 {
-    const user_det = "harshad.w+special_locator05@crestinfosystems.com";
+    const user_det = "harshad.w+special_locator06@crestinfosystems.com";
 
      await page.goto("https://rahulshettyacademy.com/client/#/auth/login");
      await page.getByPlaceholder('email@example.com').type(user_det);
