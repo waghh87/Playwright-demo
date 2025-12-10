@@ -20,11 +20,11 @@ test('Registration_flow', async({browser}) =>
 
    
 
-    await page1.goto('https://staging.theflightsbookers.com/en');
+    await page1.goto('https://stage-booking.travoiq.com/en');
 
     await page1.getByRole('button',{name: 'Sign Up'}).click();
 
-    const u_name = "harshad.w+56@crestinfosystems.com";
+    const u_name = "harshad.w+1@crestinfosystems.com";
     await page1.getByPlaceholder('Enter Email').type(u_name);
     await page1.getByPlaceholder('Enter Password*',{exact: 'Enter Password'}).type("Harshad@9996");
     await page1.getByPlaceholder('Confirm Password*',{exact: 'Confirm Password'}).type("Harshad@9996");
