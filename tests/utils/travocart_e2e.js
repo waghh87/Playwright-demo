@@ -7,7 +7,7 @@ class tracoUtils{
 
     async login()
     {
-        await this.page.goto('https://staging.theflightsbookers.com/en');
+        await this.page.goto('https://stage-booking.travoiq.com/en');
         await this.page.getByRole('button',{name: 'Sign Up'}).click();
 
         await this.page.locator('.css-1jksid4').click();

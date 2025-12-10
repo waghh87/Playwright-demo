@@ -12,10 +12,7 @@ let otptext;
 
 test('Registration_flow', async({browser}) =>
 {
-    const context = await browser.newContext({
-        
-        
-    });
+    const context = await browser.newContext();
     const page1 = await context.newPage();
 
    
